@@ -1,0 +1,20 @@
+<nav class="sidebar">
+  <div class="container">
+    <!-- Navigation -->
+    <div class="menu-logo">
+      <span>Components</span>
+      <!-- <img src="assets/img/icon/ico_arena.png" class="ico_arena">
+      <img src="assets/img/icon/ico_logo_title.png" class="ico_title" *ngIf="themeService.isDuskTheme()">
+      <img src="assets/img/icon/ico_logo_title_dark.png" class="ico_title" *ngIf="!themeService.isDuskTheme()"> -->
+      <i class="fad fa-sunrise fa-2x" (click)="changeTheme()" *ngIf="themeService.isDuskTheme()"></i>
+      <i class="fad fa-sunset fa-2x" (click)="changeTheme()" *ngIf="!themeService.isDuskTheme()"></i>
+    </div>
+    <div class="menu-list">
+      <div *ngFor="let item of menuItems" class="menu-item" (click)="navigate(item)" [ngClass]="{'selected': item == selectedMenuItem}">
+        <a class="menu-link">
+          {{item.title}}
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

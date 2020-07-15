@@ -1,0 +1,78 @@
+:root {
+  --blue: #2C7BE5;
+  --indigo: #727cf5;
+  --purple: #6b5eae;
+  --pink: #ff679b;
+  --red: #E63757;
+  --orange: #fd7e14;
+  --yellow: #F6C343;
+  --green: #00D97E;
+  --teal: #02a8b5;
+  --cyan: #39afd1;
+  --white: #FFFFFF;
+  --gray: #95AAC9;
+  --gray-dark: #3B506C;
+  --primary: #f74264;
+  --secondary: #6E84A3;
+  --success: #00D97E;
+  --info: #39afd1;
+  --warning: #F6C343;
+  --danger: #E63757;
+  --light: #EDF2F9;
+  --dark: #12263F;
+  --white: #FFFFFF;
+
+  --background-default: #171A21;
+  --background-secondary: #1c222f;
+  --background-tertiary: #272a30;
+  --background-quaternary: #171A21;
+  --background-light: #171A21;
+
+  --font-color-default: #ffffff;
+  --font-color-secondary: #c9cacc;
+  --font-color-tertiary: #5e636d;
+  --font-color-quaternary: #6284a3;
+  --font-color-quaternary: #c9cacc;
+
+  --border-color-default: #1d1e20;
+  --outline-color-default: #1c222f;
+  --scrollbar-color: #88888880;
+
+  --box-shadow-default: 0 0.75rem 1.5rem rgba(23, 30, 41, 0.5);
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Cerebri Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(18, 38, 63, 0); }
+
+body {
+  margin: 0;
+  font-family: "Cerebri Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #12263F;
+  text-align: left;
+  background-color: #F9FBFD; }
+
+.main-content { padding: 36px !important; position: absolute; top: 0; left: 0; background-color: var(--background-default); height: 100%;
+  width: 100%; margin-top: 60px;
+  @media (min-width: 768px) {
+    margin-left: 250px; width: calc(100vw - 250px);
+  }
+}
+

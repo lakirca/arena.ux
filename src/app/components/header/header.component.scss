@@ -1,0 +1,24 @@
+.header { width: 100vw; height: 60px; background-color: var(--background-secondary); position: fixed; top: 0; left: 0; z-index: 999;
+  border-bottom: 1px solid var(--border-color-default); padding: 10px 20px; display: flex;
+  .logo { position: relative; color: var(--font-color-default); height: 100%; display: flex; align-items: center; width: 200px;
+    svg { position: absolute; top: 9px; }
+    .app-name { margin-left: 85px; font-size: 1.6rem; font-weight: bold; margin-top: -5px; }
+  }
+  .menu-container { display: flex; flex: 1;
+    .menu-link { color: var(--font-color-secondary); display: flex; align-items: center; padding: 10px; cursor: pointer; font-weight: bold;
+      &:hover { text-decoration: underline; }
+    }
+    .drop-menu-wrapper {
+      .drop-menu-btn { color: var(--font-color-secondary); display: flex; align-items: center; padding: 10px; cursor: pointer; font-weight: bold;
+      }
+      .drop-menu { background: var(--background-secondary);
+        a { color: var(--font-color-secondary); font-size: 15px; font-weight: bold;
+          &:hover { background: var(--background-default); }
+        }
+      }
+    }
+  }
+  .user-icon { display: flex; align-items: center; cursor: pointer;
+    img { width: 26px; height: 26px; border-radius: 13px; border: 2px solid var(--border-color-default); }
+  }
+}

@@ -1,0 +1,32 @@
+<div class="main-content">
+  <div class="container">
+    <aux-card class="alerts-wrapper">
+      <aux-card-content>
+        <app-alert>
+          A simple primary alert—check it out!
+        </app-alert>
+        <app-alert status="secondary" (dismiss)="onCloseAlert()">
+          A simple primary alert—check it out!
+        </app-alert>
+        <app-alert status="success" closable>
+          <h4 class="alert-heading">Well done!</h4>
+
+          <!-- Text -->
+          <p>
+            Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+          </p>
+
+          <!-- Divider -->
+          <hr>
+
+          <!-- Text -->
+          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </app-alert>
+        <app-alert status="light">
+          A simple light alert—check it out!
+        </app-alert>
+      </aux-card-content>
+    </aux-card>
+  </div>
+
+</div> <!-- / .main-content -->
